@@ -5,33 +5,16 @@
   <meta name="viewport"
     content="width=device-width,
        initial-scale=1.0">
-  <title>Sesión</title>
-  <!--
-    Carga el núcleo de Firebase
-    JS SDK
-  -->
+  <title>Alumno</title>
   <script
     src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js">
     </script>
-  <!--
-    Agrega el manejo de
-    autenticación.
-  -->
   <script
     src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js">
     </script>
-  <!--
-    Agrega el manejo de bases de
-    datos.
-  -->
   <script
     src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js">
     </script>
-  <!--
-    Configura la app usando la
-    información del sitio de
-    Firebase.
-  -->
   <script src="js/init.js">
   </script>
   <script type="module"
@@ -39,52 +22,70 @@
     </script>
   <script type="module"
     src="cmp/mi-footer.js">
-    </script>
+  </script>
   <script type="module"
-    src="cmp/mi-progreso.js">
-    </script>
+  src="cmp/mi-progreso.js"> 
+  </script>
   <link rel="stylesheet"
     href="css/estilos.css">
+
 </head>
 <body>
- <form name="forma">
+  <form name="forma">
     <mi-nav></mi-nav>
     <header>
-      <h1>Sesión</h1>
+      <h1>Alumno</h1>
       <div class="herramientas">
-        <button
-          type="button"
-          name="terminarSesión">
-          Terminar Sesión
+        <a href="alumnos.html">
+          Cancelar</a>
+        <button>Guardar</button>
+        <button name="eliminar"
+          type="button">
+          Eliminar
         </button>
       </div>
+      <mi-progreso>
+      </mi-progreso>
     </header>
-    <figure>
-      <img id="avatar" src=""
-        alt="Avatar">
-    </figure>
     <p>
       <label>
-        Email
-        <output name="email">
-          <mi-progreso>
-          </mi-progreso>
-        </output>
+        Matricula
+        <input name="matricula"
+          type="text" required>
       </label>
     </p>
     <p>
       <label>
         Nombre
-        <output name="nombre">
-          <mi-progreso>
-          </mi-progreso>
-        </output>
+        <input name="nombre"
+          type="text" required>
+      </label>
+    </p>
+    <p>
+      <label>
+        Teléfono
+        <input name="telefono"
+          type="text" required>
+      </label>
+    </p>
+    <p>
+      <label>
+        Grupo
+        <input name="grupo"
+          type="text" required>
+      </label>
+    </p>
+    <p>
+      <label>
+        Fecha
+        <input name="fecha" type="date" required>
       </label>
     </p>
     <mi-footer></mi-footer>
   </form>
   <script type="module"
-    src="js/CtrlSesion.js">
+    src="js/CtrlAlumno.js">
     </script>
 </body>
 </html>
+
