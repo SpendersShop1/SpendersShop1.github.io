@@ -4,10 +4,10 @@ import {
   import {
     muestraError
   } from "../lib/util.js";
-  import {
+  /*import {
     iniciaSesión,
     terminaSesión
-  } from "./seguridad.js";
+  } from "./seguridad.js";*/
   
   /** @type {HTMLFormElement} */
   const forma = document["forma"];

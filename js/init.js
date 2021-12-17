@@ -1,5 +1,12 @@
-// Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+/*  Inicializa Firebase con la
+ * configuración del proyecto.
+ * Revisa la configuración en tu
+ * servidor de Firebase y cópiala
+ * aquí sustituyendo los
+ * asteriscos. Los campos deben
+ * quedar igual que en tu
+ * servidor. */
+// @ts-ignore
 firebase.initializeApp({
   apiKey: "AIzaSyASP5j8VI84s3ND5KBoiS1wf_UiWhv2UME",
   authDomain: "spendersshop1.firebaseapp.com",
