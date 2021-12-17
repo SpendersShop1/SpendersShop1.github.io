@@ -1,0 +1,70 @@
+* {
+    box-sizing:border-box;
+}
+body {
+margin: 0;
+}
+img {
+    display: block;
+    width: 100%;
+}
+.main-header {
+    padding: 0 20px;
+}
+.main-header__tittle{
+    text-align: center;
+    font-size: 2.5em;
+    margin: 10px 0;
+    color: rgb(137, 6, 141);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.main-nav {
+    display: none;
+}
+.main{
+    padding: 20px;
+}
+.main-header__container {
+display: flex;
+justify-content: space-around;
+align-items: center;
+}
+.icon-menu {
+    font-size: 1.5em;
+    border: 1px solid black;
+    display: block;
+    padding: 10px 20px;
+}
+.main-header__btn {
+    display: block;
+    padding: 10px 30px;
+    color: black;
+    border: 1px solid black;
+    text-decoration: none;
+    align-items: center;
+}
+/* ESTILOS DE LA CATEGORIA BLUSAS */
+.container-blusas{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+
+}
+.blusa{
+    border: 1px solid rgb(152, 101, 156);
+    padding: 20px;
+}
+.blusa__description{
+    text-align: center;
+    font-weight: bold;
+}
+.main-carro__btn{
+    color:black;
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+.blusa__price{
+    color: red;
+    font-weight: bold;
+}
