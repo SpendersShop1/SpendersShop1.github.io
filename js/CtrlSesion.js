@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import {
     getAuth
   } from "../lib/fabrica.js";
@@ -70,19 +69,7 @@ import {
   /** @type {HTMLFormElement} */
   const forma = document["forma"];
   /** @type {HTMLImageElement} */
-  const avatar = document.
-    querySelector("#avatar");
-  
-  /* Escucha cambios de usuario.
-   * El primer parámetro es una
-   * función que se invoca cada que
-   * hay un cambio de usuario y
-   * recibe los datos del usuario.
-   * El segundo parámetro es una
-   * función que se invoca cuando se
-   * presenta un error en un cambio
-   * de usuario y recibe un Error.
-   */
+
   getAuth().onAuthStateChanged(
     muestraSesión, muestraError);
   
@@ -112,5 +99,5 @@ import {
       // No ha iniciado sesión.
       iniciaSesión();
     }
->>>>>>> f1df2941f280e084b3ecbd931d728158fa22b985
+
   }

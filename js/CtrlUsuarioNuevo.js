@@ -32,7 +32,7 @@ async function protege(usuario) {
     forma.addEventListener(
       "submit", guarda);
     selectAlumnos(
-      forma.alumnoId, "");
+      forma.clienteId, "");
     checksRoles(listaRoles, []);
   }
 }

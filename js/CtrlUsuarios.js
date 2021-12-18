@@ -21,7 +21,7 @@ const firestore = getFirestore();
 const daoRol = firestore.
   collection("Rol");
 const daoAlumno = firestore.
-  collection("Alumno");
+  collection("Cliente");
 const daoUsuario = firestore.
   collection("Usuario");
 
@@ -83,7 +83,7 @@ async function htmlFila(doc) {
   const img = cod(
     await urlStorage(doc.id));
   const alumno =
-    await buscaAlumno(
+    await buscaCliente(
       data.alumnoId);
   const roles =
     await buscaRoles(data.rolIds);
@@ -118,17 +118,17 @@ async function htmlFila(doc) {
  * alumno en base a su id.
  * @param {string} id */
 async function
-  buscaAlumno(id) {
+  buscaCliente(id) {
   if (id) {
     const doc =
-      await daoAlumno.
+      await daoCliente.
         doc(id).
         get();
     if (doc.exists) {
       /**
        * @type {import(
           "./tipos.js").
-            Alumno} */
+            Cliente} */
       const data = doc.data();
       return (/* html */
         `${cod(data.nombre)}`);
